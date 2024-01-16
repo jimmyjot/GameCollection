@@ -1,0 +1,34 @@
+.container {
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+}
+#game {
+    grid-area: 1 / 2 / 1 / 2 ;
+}
+
+#version {
+    grid-area: 2 / 3 / 1 / 2 ;
+}
+
+
+#year {
+    grid-area: auto;
+}
+
+
+#myStar {
+    grid-area: auto;
+}
+
+
+#own {
+    grid-area: auto;
+}
+
+
+#rid {
+    grid-area: auto;
+}
+
