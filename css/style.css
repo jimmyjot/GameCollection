@@ -1,3 +1,8 @@
+body {
+    background-image:url("../img/GameLayout.jpg");
+
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -29,6 +34,10 @@
 
 
 #rid {
+    grid-area: auto;
+}
+
+#comments {
     grid-area: auto;
 }
 
