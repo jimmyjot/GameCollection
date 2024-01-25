@@ -9,25 +9,17 @@ body {
     grid-auto-flow: row;
 }
 
-#topHeaders, #bottomHeaders, #commentsHeaders {
+#topHeaders, #bottomHeaders, #commentsHeader{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     background-color: white;
+    height: .3in;
     opacity: 0.5;
 }
 
 #ownEntryYes, #ownEntryNo, #ridEntryYes, #ridEntryNo {
     background-color: white;
 }
-
-#game {
-    grid-area: auto;
-}
-
-#version {
-    grid-area: auto;
-}
-
 
 #year {
     grid-area: auto;
@@ -39,17 +31,23 @@ body {
 }
 
 
-#own {
-    grid-area: auto;
+  #own, #rid {
+    opacity: 1;
+    background-color: white;
+    width:1.75in;
 }
 
-
-#rid {
-    grid-area: auto;
+ .radioButtons label {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: sans-serif, Arial;
+    font-size: 16px;
+    border: 2px solid #444;
+    border-radius: 4px;
 }
 
 #commentEntry {
-    grid-area: auto;
+    grid-area: 1 / span 3;
     opacity: 1.0;
 }
 

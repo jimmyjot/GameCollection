@@ -29,21 +29,23 @@
       <div class="container" id="bottomData">
         <div class="grid-item" id="myStar"><input type="text" name="myStarEntry" id="myStarEntry" /></div>
         <div class="grid-item" id="own">
-          <input type="radio" name="ownEntry" id="ownEntryYes" /><label for="ownEntryYes">Yes</label>
-          <input type="radio" name="ownEntry" id="ownEntryNo" /><label for="ownEntryNo">No</label>
+          <input type="radio" name="ownEntry" id="ownEntryYes" class="radioButtons" /><label for="ownEntryYes">Yes</label>
+          <input type="radio" name="ownEntry" id="ownEntryNo" class="radioButtons" /><label for="ownEntryNo">No</label>
         </div>
         <div class="grid-item" id="rid">
-          <input type="radio" name="ridEntry" id="ridEntryYes" /><label for="ridEntryYes">Yes</label>
-          <input type="radio" name="ridEntry" id="ridEntryYes" /><label for="ridEntryNo">No</label>
+          <input type="radio" name="ridEntry" id="ridEntryYes" class="radioButtons" /><label for="ridEntryYes">Yes</label>
+          <input type="radio" name="ridEntry" id="ridEntryYes" class="radioButtons" /><label for="ridEntryNo">No</label>
         </div>
-        <br />
+      </div>
+      <br />
       <div class="container" id="commentsHeaders">
         <div class="grid-item" id="commentsHeader">
           <div class="grid-item" id="commentsTitle">Comments</div>
-          <div class="grid-item" id="commentsData"><input type="text" name="commentBox" id="commentEntry" /></div>
+          <div class="grid-item" id="commentsData">
+            <textarea name="commentBox" id="commentEntry" cols="40" rows="5" wrap="soft"></textarea>
+          </div>
         </div>
       </div>
-      <hr />
     </form>
   </body>
 </html>
