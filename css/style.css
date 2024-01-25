@@ -16,6 +16,10 @@ body {
     opacity: 0.5;
 }
 
+#ownEntryYes, #ownEntryNo, #ridEntryYes, #ridEntryNo {
+    background-color: white;
+}
+
 #game {
     grid-area: auto;
 }

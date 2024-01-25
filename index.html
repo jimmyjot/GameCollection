@@ -9,34 +9,41 @@
     <title>Game Collection</title>
   </head>
   <body>
-    <div class="container" id="topHeaders">
-      <div class="grid-item" id="gameHeader">Name of game</div>
-      <div class="grid-item" id="versionHeader">Version number</div>
-      <div class="grid-item" id="yearHeader">Year</div>
-    </div>
-    <div class="container" id="topData">
-      <div class="grid-item" id="game"><input type="text" name="gameEntry" id="gameEntry" /></div>
-      <div class="grid-item" id="version"><input type="text" name="versionEntry" id="versionEntry" /></div>
-      <div class="grid-item" id="year"><input type="text" name="yearEntry" id="yearEntry" /></div>
-    </div>
-    <br />
-    <div class="container" id="bottomHeaders">
-      <div class="grid-item" id="myStarHeader">My Star Rating</div>
-      <div class="grid-item" id="ownHeader">Do I own it?</div>
-      <div class="grid-item" id="ridHeader">Do I want to get rid of it?</div>
-    </div>
-    <div class="container" id="bottomData">
-      <div class="grid-item" id="myStar"><input type="text" name="myStarEntry" id="myStarEntry" /></div>
-      <div class="grid-item" id="own"><input type="text" name="ownEntry" id="ownEntry" /></div>
-      <div class="grid-item" id="rid"><input type="text" name="ridEntry" id="ridEntry" /></div>
-    </div>
-    <br />
-    <div class="container" id="commentsHeaders">
-      <div class="grid-item" id="commentsHeader">
-        <div class="grid-item" id="commentsTitle">Comments</div>
-        <div class="grid-item" id="commentsData"><input type="text" name="commentBox" id="commentEntry" /></div>
+    <form action="./list.html" method="post">
+      <div class="container" id="topHeaders">
+        <div class="grid-item" id="gameHeader">Name of game</div>
+        <div class="grid-item" id="versionHeader">Version number</div>
+        <div class="grid-item" id="yearHeader">Year</div>
       </div>
-    </div>
-    <hr />
+      <div class="container" id="topData">
+        <div class="grid-item" id="game"><input type="text" name="gameEntry" id="gameEntry" /></div>
+        <div class="grid-item" id="version"><input type="text" name="versionEntry" id="versionEntry" /></div>
+        <div class="grid-item" id="year"><input type="text" name="yearEntry" id="yearEntry" /></div>
+      </div>
+      <br />
+      <div class="container" id="bottomHeaders">
+        <div class="grid-item" id="myStarHeader">My Star Rating</div>
+        <div class="grid-item" id="ownHeader">Do I own it?</div>
+        <div class="grid-item" id="ridHeader">Do I want to get rid of it?</div>
+      </div>
+      <div class="container" id="bottomData">
+        <div class="grid-item" id="myStar"><input type="text" name="myStarEntry" id="myStarEntry" /></div>
+        <div class="grid-item" id="own">
+          <input type="radio" name="ownEntry" id="ownEntryYes" /><label for="ownEntryYes">Yes</label>
+          <input type="radio" name="ownEntry" id="ownEntryNo" /><label for="ownEntryNo">No</label>
+        </div>
+        <div class="grid-item" id="rid">
+          <input type="radio" name="ridEntry" id="ridEntryYes" /><label for="ridEntryYes">Yes</label>
+          <input type="radio" name="ridEntry" id="ridEntryYes" /><label for="ridEntryNo">No</label>
+        </div>
+        <br />
+      <div class="container" id="commentsHeaders">
+        <div class="grid-item" id="commentsHeader">
+          <div class="grid-item" id="commentsTitle">Comments</div>
+          <div class="grid-item" id="commentsData"><input type="text" name="commentBox" id="commentEntry" /></div>
+        </div>
+      </div>
+      <hr />
+    </form>
   </body>
 </html>
