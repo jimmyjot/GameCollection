@@ -2,6 +2,10 @@ body {
     background-image:url("../img/GameLayout.jpg");
 }
 
+.bg-success {
+    --bs-bg-opacity: 0.5;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -9,12 +13,12 @@ body {
     grid-auto-flow: row;
 }
 
-#topHeaders, #bottomHeaders, #commentsHeader{
+#topHeaders, #bottomHeaders, #commentsTitle{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     background-color: white;
     height: .3in;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 #ownEntryYes, #ownEntryNo, #ridEntryYes, #ridEntryNo {
@@ -46,8 +50,16 @@ body {
     border-radius: 4px;
 }
 
-#commentEntry {
-    grid-area: 1 / span 3;
-    opacity: 1.0;
+#myStar {
+    width: 1.75in;
 }
 
+#commentEntry {
+    opacity: 1.0;
+    width: 5.5in;
+}
+
+button {
+    width: 150px;
+    height:auto;
+}

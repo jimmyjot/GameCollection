@@ -18,7 +18,7 @@
       <div class="container" id="topData">
         <div class="grid-item" id="game"><input type="text" name="gameEntry" id="gameEntry" /></div>
         <div class="grid-item" id="version"><input type="text" name="versionEntry" id="versionEntry" /></div>
-        <div class="grid-item" id="year"><input type="text" name="yearEntry" id="yearEntry" /></div>
+        <div class="grid-item" id="gameYear"><input type="number" name="yearEntry" id="yearEntry" min="1978" max="2024" /></div>
       </div>
       <br />
       <div class="container" id="bottomHeaders">
@@ -27,7 +27,18 @@
         <div class="grid-item" id="ridHeader">Do I want to get rid of it?</div>
       </div>
       <div class="container" id="bottomData">
-        <div class="grid-item" id="myStar"><input type="text" name="myStarEntry" id="myStarEntry" /></div>
+        <select class="grid-item" id="myStar">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
         <div class="grid-item" id="own">
           <input type="radio" name="ownEntry" id="ownEntryYes" class="radioButtons" /><label for="ownEntryYes">Yes</label>
           <input type="radio" name="ownEntry" id="ownEntryNo" class="radioButtons" /><label for="ownEntryNo">No</label>
@@ -42,10 +53,29 @@
         <div class="grid-item" id="commentsHeader">
           <div class="grid-item" id="commentsTitle">Comments</div>
           <div class="grid-item" id="commentsData">
-            <textarea name="commentBox" id="commentEntry" cols="40" rows="5" wrap="soft"></textarea>
+            <textarea name="commentBox" id="commentEntry" rows="3" wrap="soft"></textarea>
+            <div><button>Enter</button></div>
           </div>
         </div>
       </div>
     </form>
+    <div>
+      <table>
+        <tr>
+          <td><label for="gameName">Name of game</label></td>
+          <td input type="text" id="gameName" name="gameName"></td>
+          <td><label for="versionNumber">Version</label></td>
+          <td input type="text" id="versionNumber" name="versionNumber "></td>
+          <td><label for="gameYear">Year</label></td>
+          <td input type="text" id="gameYear" name="gameYear"></td>
+          <td><label for="starRating">My Star Rating</label></td>
+          <td input type="text" id="starRating" name="starRating"></td>
+          <td><label for="ownGame">Do I own the game?</label></td>
+          <td input type="text" id="ownGame" name="ownGame"></td>
+          <td><label for="ridGame">Do I want to get rid of it?</label></td>
+          <td input type="text" id="ridGame" name="ridGame"></td>
+        </tr>
+      </table>
+    </div>
   </body>
 </html>
