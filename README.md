@@ -1,10 +1,16 @@
 # GameCollection
 
-Collectiom of games and data on them
+Collection of games and data on them
 
-This is a test project to create a front page similar to Bridge. My data will include:
+This is a test project to create a front page similar to BRIDGE. My data will include:
 
-Name (allow user to enter name, choose one from a list, or delete name) Version Year Do I own it? Star Rating (from Board Game Geek) Do I want to get rid of it? Comments
+Name (allow user to enter name, choose one from a list, or delete name) 
+Version 
+Year 
+Star Rating (from Board Game Geek) 
+Do I own it? 
+Do I want to get rid of it? 
+Comments
 
 Show table of all games and data 
 
